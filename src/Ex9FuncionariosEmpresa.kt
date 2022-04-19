@@ -27,13 +27,23 @@ fun cadastroFuncionarios(){
 }
 
 fun calcularFerias(vetorFuncionarios: Array<String?>, vetorTempoDeServico: IntArray) {
+
+    var somaTemFerias = 0
+    var somaNaoTemFerias = 0
+
     for(i: Int in vetorFuncionarios.indices){
         println("------------------------------")
         if(vetorTempoDeServico[i] > 12){
+            somaTemFerias = somaTemFerias+1
             println("${vetorFuncionarios[i]} tem direito a férias.")
         }
         else{
+            somaNaoTemFerias = somaNaoTemFerias+1
             println("${vetorFuncionarios[i]} não tem direito a férias")
         }
     }
+
+    println("------------------------------")
+    println("$somaTemFerias funcionários têm direito à férias")
+    println("$somaNaoTemFerias funcionários não têm direito à férias")
 }
