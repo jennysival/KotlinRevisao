@@ -24,7 +24,7 @@ fun verificaGatoOuCachorro(qtdAnimais: Int) {
 
     for(i in 1..qtdAnimais){
         println("Digite a espécie do ${i}º animal:")
-        val opcDigitada = readln()
+        val opcDigitada = readln().lowercase()
 
         when(opcDigitada){
             gato -> contaGato=contaGato+1
