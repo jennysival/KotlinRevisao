@@ -18,7 +18,7 @@ fun lerValores(){
 fun somarValores(x: Int, y: Int) {
 
     var soma = 0
-    if(x%13==0 && y%13==0){
+    if(x%13==0 || y%13==0){
         println("Número múltiplo de 13")
     }
     else{
